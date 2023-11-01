@@ -32,7 +32,7 @@ epoch = 50, Ir = 0.0001, optimizer = Adam, batch_size = 64의 조건에서 VGG16
 
 **VGG16**
 
-<img width="80%" src="https://github.com/hanajibsa/Classification-of-place-images/assets/115071643/5fb4cf2a-2097-4dde-b338-ea202552602d"/>
+<img width="40%" src="https://github.com/hanajibsa/Classification-of-place-images/assets/115071643/5fb4cf2a-2097-4dde-b338-ea202552602d"/>
 
 
 (99.0486, 83.16667)
