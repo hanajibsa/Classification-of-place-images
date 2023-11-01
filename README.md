@@ -1,4 +1,5 @@
 # Classification-of-place-images
+
 # **1. Introduction**
 
 본 프로젝트는 train station, farm, campus에 해당하는 각각의 이미지 3000장, 총 9000장의 이미지에 대하여 최적의  CNN(convolutional neural network)  분류 모델을 도출하는 것을 목표로 한다.
@@ -31,15 +32,12 @@ epoch = 50, Ir = 0.0001, optimizer = Adam, batch_size = 64의 조건에서 VGG16
 
 **VGG16**
 
----
+<img width="80%" src="https://github.com/hanajibsa/Classification-of-place-images/assets/115071643/5fb4cf2a-2097-4dde-b338-ea202552602d"/>
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eb941873-fc78-4b2f-aa63-6eb885e50f2a/Untitled.png)
 
 (99.0486, 83.16667)
 
 **ResNet34**
-
----
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e84be54f-8e88-4a01-b7e8-376c119dca19/Untitled.png)
 
@@ -47,15 +45,11 @@ epoch = 50, Ir = 0.0001, optimizer = Adam, batch_size = 64의 조건에서 VGG16
 
 **AlexNet**
 
----
-
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8779813e-62ee-4dda-a106-f255d9158388/Untitled.png)
 
 (91.8194, 77.1111)
 
 **GoogleNet**
-
----
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dd07d547-8ba6-47d1-b2a8-fe828d8e8884/Untitled.png)
 
@@ -71,15 +65,11 @@ VGG16의 경우 epoch 20 전에 정확도가 saturation되는 것을 확인하�
 
 **Adam**
 
----
-
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1653d9f5-4eab-4787-9f2f-bc11a825e599/Untitled.png)
 
 (98.6458,83.3889)
 
 **NAdam**
-
----
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/689a156b-11c7-4efa-964a-6e56dac315eb/Untitled.png)
 
@@ -87,15 +77,11 @@ VGG16의 경우 epoch 20 전에 정확도가 saturation되는 것을 확인하�
 
 **SGD**
 
----
-
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b9586d84-0e89-4732-98ef-839776328e17/Untitled.png)
 
 (36.2292,40.2778)
 
 **RMSProp**
-
----
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e58f1959-adc5-49d1-8535-4f4adcfb0094/Untitled.png)
 
@@ -115,15 +101,11 @@ VGG16의 경우 epoch 20 전에 정확도가 saturation되는 것을 확인하�
 
 **lr = 1e-5**
 
----
-
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/50690786-361f-4a3f-90d8-49969f11b327/Untitled.png)
 
 (96.0417, 82.7778)
 
 **CosineAnnealingWarmRestarts**
-
----
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4350004f-2bdf-4a4d-a1f1-e24fb9151565/Untitled.png)
 
@@ -131,15 +113,11 @@ VGG16의 경우 epoch 20 전에 정확도가 saturation되는 것을 확인하�
 
 **LAMBDA LR**
 
----
-
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c319d2d3-60f6-4242-ad20-d6e146378c57/Untitled.png)
 
 (99.0833, 83.1111)
 
 **StepLR**
-
----
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/641a4c35-bd8d-41cc-b284-c8bb0ac0f06a/Untitled.png)
 
@@ -155,13 +133,9 @@ overfitting을 방지하고 모델의 generalization ability를 높이기 위해
 
 **lr = 0.0001, weight_decay=0.01**
 
----
-
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/67598293-bb63-4d52-b284-2cb9a4bea72e/Untitled.png)
 
 **lr = 0.0001, weight_decay=1e-5**
-
----
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7a4fe2c7-e406-4d5c-becd-8163a8b1675b/Untitled.png)
 
@@ -177,15 +151,11 @@ optimizer= Adam, Ir = 0.001을 고정으로 설정한 모델에 대하여  batc
 
 **16**
 
----
-
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4b465268-ba68-43a4-8a88-539a186693cd/Untitled.png)
 
 (98.4028, 84.2778)
 
 **32**
-
----
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/595f7378-4c6f-4881-8e62-576752b7a5b6/Untitled.png)
 
@@ -193,15 +163,11 @@ optimizer= Adam, Ir = 0.001을 고정으로 설정한 모델에 대하여  batc
 
 **48**
 
----
-
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d32b374c-bd41-4bb4-ba15-53702292ff9e/Untitled.png)
 
 (98.5720, 83.2594)
 
 **64**
-
----
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/62d41f1a-f789-40ad-9a86-7e5aaf9a2d93/Untitled.png)
 
